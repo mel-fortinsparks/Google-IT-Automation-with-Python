@@ -32,4 +32,36 @@
 >We also touched on the modulo operator, which is represented by the percent sign: %. This operator performs integer division, but only returns the remainder of this division operation. If we’re dividing 5 by 2, the quotient is 2, and the remainder is 1. Two 2s can go into 5, leaving 1 left over. So 5%2 would return 1. Dividing 10 by 5 would give us a quotient of 2 with no remainder, since 5 can go into 10 twice with nothing left over. In this case, 10%2 would return 0, as there is no remainder.
 
 >Building off of the if and else blocks, which allow us to branch our code depending on the evaluation of one statement, the elif statement allows us even more comparisons to perform more complex branching. Very similar to the if statements, an elif statement starts with the elif keyword, followed by a comparison to be evaluated. This is followed by a colon, and then the code block on the next line, indented to the right. An elif statement must follow an if statement, and will only be evaluated if the if statement was evaluated as false. You can include multiple elif statements to build complex branching in your code to do all kinds of powerful things!
+
+> **Conditionals Cheat Sheet**
+>
+>In earlier videos, we took a look at some of the built-in Python operators that allow us to compare values, and some logical operators we can use to combine values. We also learned how to use operators in if-else-elif blocks. 
+> 
+>It’s a lot to learn but, with practice, it gets easier to remember it all. In the meantime, this handy cheat sheet gives you all the information you need at a glance. 
+> 
+>**Comparison operators**
+> - a == b: a is equal to b
+> - a != b: a is different than b
+> - a < b: a is smaller than b
+> - a <= b: a is smaller or equal to b
+> - a > b: a is bigger than b
+> - a >= b: a is bigger or equal to b
+>
+>**Logical operators**
+> - a and b: True if both a and b are True. False otherwise.
+> - a or b: True if either a or b or both are True. False if both are False.
+> - not a: True if a is False, False if a is True.
+>
+>**Branching blocks**
+>In Python, we branch our code using if, else and elif. This is the branching syntax:
+```
+if condition1:
+	if-block
+elif condition2:
+	elif-block
+else:
+	else-block
+```
+>Remember: The if-block will be executed if condition1 is True. The elif-block will be executed if condition1 is False and condition2 is True. The else block will be executed when all the specified conditions are false.
+
 # Module Review
