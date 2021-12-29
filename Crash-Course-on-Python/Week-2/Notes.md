@@ -38,3 +38,46 @@ amount_b = get_seconds(0,45,15)
 result = amount_a + amount_b
 print(result)
 ```
+### Function written to reduce duplication
+In this code, identify the repeated pattern and replace it with a function called month_days, that receives the name of the month and the number of days in that month as parameters. Adapt the rest of the code so that the result is the same. Confirm your results by making a function call with the correct parameters for both months listed.
+**Before:**
+```
+# REPLACE THIS STARTER CODE WITH YOUR FUNCTION
+june_days = 30
+print("June has " + str(june_days) + " days.")
+july_days = 31
+print("July has " + str(july_days) + " days.")
+```
+**After:**
+```
+def month_days(month, days):
+    print(month+" has " + str(days) + " days.")
+month_days("June", 30)
+month_days("July", 31)
+```
+### This is the solution to the old question for the same video:
+```
+def print_monthly_expense(month, hours):
+    total = hours * 0.65
+    print("In " + month + " we spent: " + str(total))
+print_monthly_expense("June", 243)
+print_monthly_expense("July", 325)
+print_monthly_expense("August", 298)
+```
+### Write a fuction to calculate the area of a rectanger that is more readable
+This function to calculate the area of a rectangle is not very readable. Can you refactor it, and then call the function to calculate the area with base of 5 and height of 6?
+>Tip: a function that calculates the area of a rectangle should probably be called rectangle_area, and if it's receiving base and height, that's what the parameters should be called.
+**Before:**
+```
+def f1(x, y):
+	z = x*y  # the area is base*height
+	print("The area is " + str(z))
+```
+**After:**
+```
+def rectangle_area(base, height):
+	area = base*height  # the area is base*height
+	print("The area is " + str(area))
+
+rectangle_area(5,6)
+```
