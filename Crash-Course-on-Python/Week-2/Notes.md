@@ -1,4 +1,4 @@
-
+## Functions
 ### Function written to calculate the total number of seconds for a time period
 Flesh out the body of the print_seconds function so that it prints the total amount of seconds given the hours, minutes, and seconds function parameters. Remember that there are 3600 seconds in an hour and 60 seconds in a minute.
 <br>**Before:**
@@ -80,4 +80,20 @@ def rectangle_area(base, height):
 	print("The area is " + str(area))
 
 rectangle_area(5,6)
+```
+## Conditionals
+The is_positive function should return True if the number received is positive, otherwise it returns None. Can you fill in the gaps to make that happen?
+#### Before:
+```
+def is_positive(number):
+  if ___:
+    return ___
+```
+#### After:
+```
+def is_positive(number):
+  if number > 0:
+    return True
+  else:
+    return
 ```
