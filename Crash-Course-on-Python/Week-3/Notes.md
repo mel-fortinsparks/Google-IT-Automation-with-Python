@@ -147,3 +147,35 @@ for home_team in teams:
 - [x] if home_team != away_team:
 
 >We want to print all possible team pairings but exclude those where a team would play against itself. To do that, we need a conditional that skips the case where both teams are the same.
+```
+teams = ["Dragons", "Wolves", "Pandas", "Unicorns"]
+for home_team in teams:
+    for away_team in teams:
+        if home_team != away_team:
+	    print(home_team + " vs " + away_team)
+```
+### Common errors in for loops
+```
+def greet_friends(friends):
+    for friend in friends:
+        print("Hi " + friend)
+
+greet+friends(["Taylor", "Luisa", "Jamaal", "Eli"])
+```
+#### Question:
+The validate_users function is used by the system to check if a list of users is valid or invalid. A valid user is one that is at least 3 characters long. For example, ['taylor', 'luisa', 'jamaal'] are all valid users. When calling it like in this example, something is not right. Can you figure out what to fix?<br>
+**Before:**
+```
+def validate_users(users):
+  for user in users:
+    if is_valid(user):
+      print(user + " is valid")
+    else:
+      print(user + " is invalid")
+
+validate_users("purplecat")
+```
+**After:** (only change)
+```
+validate_users(["purplecat"])
+```
