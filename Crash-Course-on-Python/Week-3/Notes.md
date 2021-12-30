@@ -179,3 +179,51 @@ validate_users("purplecat")
 ```
 validate_users(["purplecat"])
 ```
+## Recursion
+### What is recursion?
+A recursive function calls itself.
+```
+def factorial(n):
+    if n < 2:
+        return 1
+    return n * factorial(n-1)
+```
+```
+def factorial(n):
+    print("Factorial called with " + str(n))
+    if n < 2:
+        print("Returning 1")
+	return 1
+    result = n * factorial(n-1)
+    print("Returning " + str(result) + " for factorial of " + str(n))
+    return result
+    
+factorial(4)
+```
+#### Question:
+**Before**
+```
+def sum_positive_numbers(n):
+    # The base case is n being smaller than 1
+    if n < 1:
+        return ___
+
+    # The recursive case is adding this number to 
+    # the sum of the numbers smaller than this one.
+    return ___ + sum_positive_numbers(___)
+
+print(sum_positive_numbers(3)) # Should be 6
+print(sum_positive_numbers(5)) # Should be 15
+```
+**After:**
+```
+def sum_positive_numbers(n):
+    if n == 1:
+        return 1
+    return n + sum_positive_numbers(n-1)
+
+print(sum_positive_numbers(3)) # Should be 6
+print(sum_positive_numbers(5)) # Should be 15
+```
+
+### Recursion in action in the IT context
