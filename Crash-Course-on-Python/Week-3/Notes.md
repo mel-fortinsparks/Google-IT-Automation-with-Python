@@ -49,3 +49,22 @@ def count_down(start_number):
 
 count_down(3)
 ```
+#### Question
+The following code causes an infinite loop. Can you figure out what’s missing and how to fix it?
+<br>**Before:**
+```
+def print_range(start, end):
+	# Loop through the numbers from start to end
+	n = start
+	while n <= end:
+		print(n)
+```
+**After:**
+```
+def print_range(start, end):
+	# Loop through the numbers from start to end
+	n = start
+	while n <= end:
+		print(n)
+		n+=1
+```
