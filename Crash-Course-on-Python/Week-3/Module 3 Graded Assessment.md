@@ -215,7 +215,7 @@ def decade_counter():
 - [x] Failure to initialize variables
 - [ ] Nothing is happening inside the while loop
 - [ ] Wrong comparison operator
-
+> The variable year needs to be initialized prior to being used in the while loop.
 ### Question 8: What is the value of x at the end of the following code?
 ```
 for x in range(1, 10, 3):
@@ -240,3 +240,4 @@ def votes(params):
 - [ ] votes(yes, no, maybe)
 - [ ] votes([yes, no, maybe])
 - [x] votes(['yes', 'no', 'maybe'])
+> This function is looking for one argument, and the list of strings is just one argument.
