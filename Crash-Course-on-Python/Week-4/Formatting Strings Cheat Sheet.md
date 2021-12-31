@@ -54,6 +54,7 @@ Official documentation for the format string syntax at https://docs.python.org/3
 |{:<6s} |string aligned to the left that many spaces |'{:<6s}'.format('Py') → 'Py    '|
 |{:>6s} |string aligned to the right that many spaces |'{:>6s}'.format('Py') → '    Py'|
 |{:^6s} | string centered in that many spaces | '{:^6s}'.format('Py') → '  Py  '|
+<br>
  Check out the official documentation for all available expressions at https://docs.python.org/3/library/string.html#format-specification-mini-language
  <br><br>
  **Old string formatting (Optional)**
