@@ -91,38 +91,84 @@ True
 
 ### Creating new strings
 #### Question
-In this code, there's an initialization problem that's causing our function to behave incorrectly. Can you find the problem and fix it?
-<br>**Before:**
+Using the index method, find out the position of "x" in "supercalifragilisticexpialidocious".
 ```
-
+word = "supercalifragilisticexpialidocious"
+print(word.index("x"))
 ```
-**After:**
+Notes:
 ```
-
+def replace_domain(email, old_domain, new_domain):
+    if "@" + old_domain in email:
+        index = email.index("@" + old_domain)
+        new_email = email[:index] + "@" + new_domain
+        return new_email
+    return email
 ```
 ### More string methods
 #### Question
-The following code 
+Fill in the gaps in the initials function so that it returns the initials of the words contained in the phrase received, in upper case. For example: "Universal Serial Bus" should return "USB"; "local area network" should return "LAN”.
 <br>**Before:**
 ```
+def initials(phrase):
+    words = phrase.___
+    result = ""
+    for word in words:
+        result += ___
+    return ___
 
+print(initials("Universal Serial Bus")) # Should be: USB
+print(initials("local area network")) # Should be: LAN
+print(initials("Operating system")) # Should be: OS
 ```
 **After:**
 ```
+def initials(phrase):
+    words = phrase.split()
+    result = ""
+    for word in words:
+        result += word[0]
+    return result.upper()
 
+print(initials("Universal Serial Bus")) # Should be: USB
+print(initials("local area network")) # Should be: LAN
+print(initials("Operating system")) # Should be: OS
 ```
 ### Formatting strings
 #### Question
-The following code 
+```
+name = "Manny"
+number = len(name) * 3
+print("Hello {}, your lucky number is {}".format(name,number))
+```
+```
+print("Your lucky number is {number}, {name}.".format(name=name, number=len(name)*3))
+```
+Modify the student_grade function using the format method, so that it returns the phrase "X received Y% on the exam". For example, student_grade("Reed", 80) should return "Reed received 80% on the exam".
 <br>**Before:**
 ```
+def student_grade(name, grade):
+	return ""
 
+print(student_grade("Reed", 80))
+print(student_grade("Paige", 92))
+print(student_grade("Jesse", 85))
 ```
 **After:**
 ```
+def student_grade(name, grade):
+	return "{name} received {grade}% on the exam".format(name=name, grade=grade)
 
+print(student_grade("Reed", 80))
+print(student_grade("Paige", 92))
+print(student_grade("Jesse", 85))
 ```
-
+More Notes:
+```
+price = 7.5
+with_tax = price * 1.09
+print("Base price: ${:.2f}. With tax: ${:.2f}.".format(price, with_tax))
+```
 ## Lists
 ### What is (a list)?
 #### Question
